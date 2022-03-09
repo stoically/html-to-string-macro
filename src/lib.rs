@@ -80,12 +80,12 @@ fn walk_nodes(nodes: Vec<Node>, nodes_context: Option<NodeType>) -> (String, Vec
 
 /// Converts HTML to `String`.
 ///
-/// See [syn-rsx docs](docs.rs/syn-rsx/) for supported tags and syntax.
+/// See [syn-rsx docs](https://docs.rs/syn-rsx/) for supported tags and syntax.
 ///
 /// # Example
 ///
 /// ```
-/// assert_eq!(html_to_string_macro::html!(<html>"hello world"</html>), "<html>hello world</html>");
+/// assert_eq!(html_to_string_macro::html!(<div>"hello world"</div>), "<div>hello world</div>");
 /// ```
 #[proc_macro]
 pub fn html(tokens: TokenStream) -> TokenStream {
